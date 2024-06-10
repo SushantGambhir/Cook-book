@@ -18,4 +18,8 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 })
 export class AppComponent {
   title = 'cookbook';
+  loadedFeature ='';
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
+  }
 }
